@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/6245260836.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="imgs/c_logo.png">
+    </link>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/modal-slide.js"></script>
+    <title>Cassandra Haydock</title>
+</head>
+
+<body>
+    <main>
+        <!-- Div for flex -->
+        <div class="information">
+            <!-- Self-Portrait -->
+            <div>
+                <img src="imgs/me.png" alt="cartoon character with brown hair and glasses" height="600" />
+            </div>
+
+            <!-- Information -->
+            <div>
+                <!-- Description -->
+                <h1>Cassandra Haydock</h1>
+                <h2>My Links</h2>
+                <p>Second-year Computer Science student at Trent University.</p>
+
+                <!-- Links -->
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/cassandra-haydock-97b1941a5/" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://github.com/cassiehaydock" title="GitHub"><i
+                                class="fa-brands fa-github fa-2x"></i></a></li>
+                    <li><a class="modal-button" id="modal-button"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+                </ul>
+
+                <!-- modal pop up box -->
+                <div class="modal-box" id="modal-box">
+                    <span id="close">×</span>
+                    <span>cassandrahaydock@trentu.ca</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- Skills -->
+            <div class="skills">
+                <h2>Skills</h2>
+                <i class="devicon-html5-plain-wordmark fa-4x"></i>
+                <i class="devicon-css3-plain-wordmark fa-4x"></i>
+                <i class="devicon-php-plain fa-4x"></i>
+                <i class="devicon-mysql-plain-wordmark fa-4x"></i>
+                <img src="imgs/SharePoint_Logo.png" height="55" />
+                <i class="devicon-python-plain-wordmark fa-4x"></i>
+                <i class="devicon-csharp-plain-wordmark fa-4x"></i>
+                <i class="devicon-javascript-plain fa-3x"></i>
+                <img src="imgs/PowerApps_Logo.png" height="55" />
+                <img src="imgs/PowerAutomate_Logo.png" height="55" />
+                <i class="devicon-java-plain-wordmark fa-4x"></i>
+                <img src="imgs/PowerBI_Logo.png" height="55" />
+            </div>
+
+            <div class="slideshow">
+                <h2>Projects</h2>
+                <!-- Next and previous buttons -->
+                <a id="prev">&#10094;</a>
+                <a id="next">&#10095;</a> 
+
+
+                <div class="slides fade">
+                    <img src="imgs/camera.png"/>
+                    <h3>Movie Collection</h3>
+                    <p>This is a full-stack website made over the length of the Web Development (COIS-3420) course at Trent University.
+                        This website used HTML, CSS, JavaScript to create and style the site. We used PHP to access, traverse, and manipulate
+                        an SQL database using queries with user inputted data. The site is fully functions with a login, account creation, password reset, sticky input fields 
+                        which users could dynamically update information. The site also included some interactive features such as a word count that changes with each word typed,
+                        modal pop up, and collapsing navigation.
+                    </p>
+                    <a href="https://github.com/cassiehaydock/tip-distribution">Learn More</a>
+                </div>
+                
+                <!-- slides -->
+                <div class="slides fade">
+                    <img src="imgs/calc.png"/>
+                    <h3>Tip Distribution</h3>
+                    <p>Built a C# program to efficiently calculate the disturbution of tips to employees. The project contains a defined Worker object with specifc
+                        properties, a personally defined Doubly Linked List data structure to hold and manipulate the data, and a main function that handles user input, calls functions,
+                        and writes to and from a file.
+                    </p>
+                    <a href="https://github.com/cassiehaydock/tip-distribution">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
