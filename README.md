@@ -1,2 +1,2 @@
-# This is my Personal Website
+# My Personal Website
 https://cassiehaydock.github.io/
