@@ -9,6 +9,11 @@ body{
     color: white;
 }
 
+footer{
+    bottom: 0;
+    text-align: center;
+}
+
 /* organizing link container */
 .information {
     display:flex;
