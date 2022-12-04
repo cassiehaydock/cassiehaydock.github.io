@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.stroke();
 
     //Generate word for hangman
-    var words = ['animal', 'rhythm', 'monster', 'recall', 'corner', 'payroll', 'soccer', 'basketball', 'hockey', 'cup', 'slow', 'glass', 'run', 'slap', 'rock'];
+    var words = ['animal', 'rhythm', 'monster', 'recall', 'corner', 'payroll', 'soccer', 'basketball', 'hockey', 'cup', 'slow', 'glass', 'run', 'slap', 'rock', 'play', 'create', 'tiger', 'cat', 'remember', 'mark', 'recess', 'drink', 'remark', 'machine'];
     const index = Math.floor(Math.random() * words.length);
     var chosen = words[index];
 
