@@ -10,6 +10,9 @@ var mpLink = document.getElementById("modal-button");
 // Select close action element
 var close = document.getElementById("close");
 
+// Get the video
+var vid = document.getElementById("vid");
+
 // Open modal once the link is clicked
 mpLink.onclick = function() {
     mpopup.style.display = "block";
@@ -17,6 +20,7 @@ mpLink.onclick = function() {
 
 // Close modal once close element is clicked
 close.onclick = function() {
+    vid.pause();
     mpopup.style.display = "none";
 };
 
