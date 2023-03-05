@@ -1,6 +1,5 @@
 html{
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(106, 20, 20) 50%, rgb(253, 253, 253) 50%);
+    background: linear-gradient(to top, rgb(211, 177, 177) 0%, rgb(173, 143, 143) 55%,rgb(63, 23, 23) 50%,rgb(63, 23, 23) 100%);
 }
 
 body{
@@ -18,17 +17,11 @@ footer{
 .information {
     display:flex;
     justify-content: center;
-    margin: 5rem;
-}
-
-/* organizing skills container */
-.skills {
-    width: 50vw;
+    margin: 8rem;
 }
 
 /* organizing the slideshow container */
 .slideshow {
-    /* box-shadow: 2rem 2rem 4rem #000000; */
     border-radius: 0.5rem;
     max-width: 25rem;
 }
@@ -36,6 +29,13 @@ footer{
 /* selecting the slideshow and skill container to make them side by side */
 .information + div {
     display: flex;
+    justify-content: center;
+}
+
+/* organizing skills container */
+.skills, .slideshow{
+    height:min-content;
+    width: 50vw;
 }
 
 /* organizing all three containers  with similiarities */
@@ -48,8 +48,7 @@ footer{
 
 /* making the skills and link containers similar */
 .information div:nth-child(2), .skills{
-    /* box-shadow: 2rem 2rem 4rem #070707; */
-    border-radius: 50%;
+    border-radius: 1rem;
 }
 
 /* styling links */
