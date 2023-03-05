@@ -1,5 +1,5 @@
 html{
-    background: linear-gradient(to top, rgb(211, 177, 177) 0%, rgb(173, 143, 143) 55%,rgb(63, 23, 23) 50%,rgb(63, 23, 23) 100%);
+    background: linear-gradient(to top, rgb(110, 104, 104) 0%, rgb(110, 104, 104) 55%,rgb(54, 51, 51) 50%,rgb(54, 51, 51) 100%);
 }
 
 body{
@@ -86,11 +86,12 @@ a:hover{
     border-bottom: none;
     background-color: rgb(155, 12, 12);
     color: white;
+    cursor: pointer;
 }
 
 /* spacing out skill logos/imgs */
 .skills i, .skills img{
-    margin: 2.5rem;
+    margin: 2rem;
 }
 
 .skills img{
@@ -103,24 +104,25 @@ a:hover{
 /* /////////////////////////  */
 .modal-box{
     display: none;
-    transform: translate(60%, 50%);
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    color: black;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: 1rem solid rgb(155, 12, 12);
     width:fit-content;
-    border-radius: 1rem;
+    height: fit-content;
+    border-radius: 0.5rem;
     padding:1rem;
 }
 
 #close {
-    color: rgb(0, 0, 0);
+    color: rgb(192, 192, 192);
     float: right;
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 0.5rem;
 }
 #close:hover, .close:focus {
-    color: rgb(255, 0, 0);
+    color: rgb(155, 12, 12);
     text-decoration: none;
     cursor: pointer;
 }
