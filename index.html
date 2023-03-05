@@ -32,18 +32,13 @@
 
                 <!-- Links -->
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/cassandra-haydock-97b1941a5/" title="LinkedIn"><i
+                    <li><a href="https://www.linkedin.com/in/cassandra-haydock-97b1941a5/" alt="LinkedIn"><i
                                 class="fa-brands fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="https://github.com/cassiehaydock" title="GitHub"><i
+                    <li><a href="https://github.com/cassiehaydock" alt="GitHub"><i
                                 class="fa-brands fa-github fa-2x"></i></a></li>
-                    <li><a class="modal-button" id="modal-button"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+                    <li><a href = "mailto: cassandrahaydock@trentu.ca" alt="GitHub"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
                 </ul>
 
-                <!-- modal pop up box -->
-                <div class="modal-box" id="modal-box">
-                    <span id="close">×</span>
-                    <span>cassandrahaydock@trentu.ca</span>
-                </div>
             </div>
         </div>
 
@@ -51,18 +46,30 @@
             <!-- Skills -->
             <div class="skills">
                 <h2>Skills</h2>
-                <i class="devicon-html5-plain-wordmark fa-4x"></i>
-                <i class="devicon-css3-plain-wordmark fa-4x"></i>
-                <i class="devicon-php-plain fa-4x"></i>
-                <i class="devicon-mysql-plain-wordmark fa-4x"></i>
+                <i class="devicon-html5-plain-wordmark fa-3x"></i>
+                <i class="devicon-css3-plain-wordmark fa-3x"></i>
+                <i class="devicon-php-plain fa-3x"></i>
+                <i class="devicon-mysql-plain-wordmark fa-3x"></i>
+                <i class="devicon-javascript-plain fa-2x"></i>
+                <i class="devicon-csharp-plain-wordmark fa-3x"></i>
+                <i class="devicon-bash-plain fa-3x"></i>
+                <i class="devicon-java-plain-wordmark fa-3x"></i>
+                <i class="devicon-python-plain-wordmark fa-3x"></i>
+                <i class="devicon-c-plain fa-3x"></i>
+                <i class="devicon-filezilla-plain fa-3x"></i>
+                <i class="devicon-gimp-plain fa-3x"></i>
                 <img src="imgs/SharePoint_Logo.png" height="55" />
-                <i class="devicon-python-plain-wordmark fa-4x"></i>
-                <i class="devicon-csharp-plain-wordmark fa-4x"></i>
-                <i class="devicon-javascript-plain fa-3x"></i>
                 <img src="imgs/PowerApps_Logo.png" height="55" />
                 <img src="imgs/PowerAutomate_Logo.png" height="55" />
-                <i class="devicon-java-plain-wordmark fa-4x"></i>
                 <img src="imgs/PowerBI_Logo.png" height="55" />
+            </div>
+
+            <!-- modal pop up box -->
+            <div class="modal-box" id="modal-box">
+                <span id="close">×</span>
+                <video width="900" height="600" id="vid" controls>
+                    <source src="vids/coopVid.mp4" type="video/mp4">
+                </video>
             </div>
 
             <div class="slideshow">
@@ -73,6 +80,18 @@
 
                 <!-- slides -->
                 <div class="slides fade">
+                    <img src="imgs/camera.png"/>
+                    <h3>Movie Collection</h3>
+                    <p>This is a full-stack website made over the length of the Web Development (COIS-3420) course at Trent University.
+                        This website used HTML, CSS, JavaScript to create and style the site. We used PHP to access, traverse, and manipulate
+                        an SQL database using queries with user inputted data. The site is fully functional, with a login, account creation, password reset, sticky input fields 
+                        which users could dynamically update information, and more. The site also included some interactive features such as a word count that changes with each word typed,
+                        modal pop up, and collapsing navigation.
+                    </p>
+                    <a href="https://github.com/cassiehaydock/Movie-Library">Learn More</a>
+                </div>
+                
+                <div class="slides fade">
                     <img src="imgs/calc.png"/>
                     <h3>Tip Distribution</h3>
                     <p>Built a C# program to efficiently calculate the disturbution of tips to employees. The project contains a defined Worker object with specifc
@@ -81,43 +100,30 @@
                     </p>
                     <a href="https://github.com/cassiehaydock/tip-distribution">Learn More</a>
                 </div>
-                
+
                 <div class="slides fade">
                     <img src="imgs/hangman.png"/>
                     <h3>Hangman</h3>
-                    <p>Built a functional single player Hangman game using Javascript, HTML, and CSS. The game uses the canavas fucntion in JavaScript to draw the stage, shows the users
+                    <p>Built a functional single player Hangman game using Javascript, HTML, and CSS. The game uses the canavas function in JavaScript to draw the stage, shows the users
                         which letter they have already guessed, and dynamically fills the spaces when a letter is correctly guessed. The game will be updated to include more in depth
                         features such as: more features on the hangman to allow for more guesses, allowing users to guess full words, guessing phrases/sentences, and more.
                     </p>
                     <a href="https://github.com/cassiehaydock/hangman">Learn More</a>
                     <a href="hangman.html">Play</a>
                 </div>
-                
+
                 <div class="slides fade">
-                    <img src="imgs/camera.png"/>
-                    <h3>Movie Collection</h3>
-                    <p>This is a full-stack website made over the length of the Web Development course (COIS-3420) at Trent University.
-                        This website used HTML, CSS, and JavaScript to create and style the site. We used PHP to access, traverse, and manipulate
-                        an SQL database using queries with user inputted data. The site is fully functional with a login, account creation, password reset, and sticky input fields 
-                        which users can dynamically update information. The site also included some interactive features such as a word count that changes with each word typed,
-                        modal pop up, and collapsing navigation.
-                    </p>
-                </div>
-                
-                <div class="slides fade">
-                    <img src="imgs/office365.png"/>
-                    <h3>Microsoft 365 Application</h3>
-                    <p>Created a fully functional reporting application using SharePoint, PowerApps, PowerAutomate, and Power BI. Users fill out a form created on Power Apps
-                        which includes a repeating table and required fields. Users can also save drafts and return at a later time. The application pulls and pushes data from 
-                        multiple Sharepoint lists in order to organize data correctly. Using Power Automate, the submitted data from users is compiled from two SharePoint lists into 
-                        one main list. This list is then used in a Power BI report to visualize the data and generate reports.
-                    </p>
+                    <img src="imgs/editing.jpg"/>
+                    <h3>Compilation</h3>
+                    <p>Little compilation video I made of my friends and classmates at Trent Univeristy</p>
+                    <a class="modal-button" id="modal-button" alt="Email">Watch</a>
+
                 </div>
 
             </div>
         </div>
     </main>
-    
+
     <footer>Cassandra Haydock &copy;</footer>
 </body>
 
