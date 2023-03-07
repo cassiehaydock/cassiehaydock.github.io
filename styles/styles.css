@@ -90,14 +90,12 @@ a:hover{
     cursor: pointer;
 }
 
-/* spacing out skill logos/imgs */
-.skills i, .skills img{
-    margin: 2rem;
-}
-
-.skills img{
-    height: 7vh;
-    width: auto;
+/* spacing out skill logo-imgs */
+.skills div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
 }
 
 /* ////////////////////////// */
