@@ -1,29 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){
-
-///////////////// Modal Triggers ///////////////////////
-// Select modal
-var mpopup = document.getElementById('modal-box');
-
-// Select trigger link
-var mpLink = document.getElementById("modal-button");
-
-// Select close action element
-var close = document.getElementById("close");
-
-// Get the video
-var vid = document.getElementById("vid");
-
-// Open modal once the link is clicked
-mpLink.onclick = function() {
-    mpopup.style.display = "block";
-};
-
-// Close modal once close element is clicked
-close.onclick = function() {
-    vid.pause();
-    mpopup.style.display = "none";
-};
-
 ///////////////// Slideshow Triggers ///////////////////////
 // Select first slide
 let slideIndex = 1;
