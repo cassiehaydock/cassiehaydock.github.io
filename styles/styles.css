@@ -1,10 +1,17 @@
 html{
-    background: linear-gradient(to top, rgb(110, 104, 104) 0%, rgb(110, 104, 104) 55%,rgb(54, 51, 51) 50%,rgb(54, 51, 51) 100%);
+    /* background: linear-gradient(to top, rgb(110, 104, 104) 0%, rgb(110, 104, 104) 55%,rgb(54, 51, 51) 50%,rgb(54, 51, 51) 100%); */
+    background: linear-gradient(-180deg, rgb(54, 51, 51) 10%, rgb(110, 104, 104) 50%);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    margin: 1.5rem;
 }
 
 body{
+    font-size: 1.5rem;
     font-family:monospace;
-    font-size: 1.8rem;
     color: white;
 }
 
@@ -14,32 +21,38 @@ footer{
 }
 
 /* organizing link container */
-.information {
+.me {
     display:flex;
     justify-content: center;
-    margin: 8rem;
+    margin: 5rem;
+}
+
+.me div:nth-of-type(2){
+    height:min-content;
 }
 
 /* organizing the slideshow container */
 .slideshow {
     border-radius: 0.5rem;
-    max-width: 25rem;
+    width:min-content
 }
 
 /* selecting the slideshow and skill container to make them side by side */
-.information + div {
+.me + div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* organizing skills container */
-.skills, .slideshow{
+/* organizing skills slideshow container */
+.info{
+    flex-basis: 50%;
     height:min-content;
-    width: 50vw;
+    /* width: 50vw; */
 }
 
 /* organizing all three containers  with similiarities */
-.information div:nth-of-type(2), .skills, .slideshow {
+.me div:nth-of-type(2), .info{
     background-color: black;
     text-align: center;
     padding: 1rem;
@@ -48,20 +61,24 @@ footer{
 }
 
 /* making the skills and link containers similar */
-.information div:nth-child(2), .skills{
+.me div:nth-child(2), .info{
     border-radius: 1rem;
 }
 
-/* styling links */
-ul {
+/* styling lists */
+.me ul, .me li {
     display: inline;
+}
+
+.me ul, #courses ul{
     list-style: none;
 }
 
-li{
-  display: inline;
+#courses li{
+    margin: 1rem;
 }
 
+/* styling links */
 a {
     color: white;
     padding: 0.5rem;
@@ -69,10 +86,17 @@ a {
 
 a:hover{
     color: rgb(155, 12, 12);
+}
+
+.me a:hover{
     border-bottom: 0.2rem solid rgb(155, 12, 12);
 }
 
-.slideshow i:hover{
+header a{
+    text-decoration: none;
+}
+
+#slideshow i:hover{
     color: rgb(155, 12, 12);
 }
 
@@ -91,7 +115,7 @@ a:hover{
 }
 
 /* spacing out skill logo-imgs */
-.skills div{
+#skills div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
